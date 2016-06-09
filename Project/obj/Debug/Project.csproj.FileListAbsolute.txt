@@ -1,0 +1,4 @@
+C:\Users\PhOnTipa\Documents\GitHub\Project\Project\bin\Project.dll
+C:\Users\PhOnTipa\Documents\GitHub\Project\Project\bin\Project.pdb
+C:\Users\PhOnTipa\Documents\GitHub\Project\Project\obj\Debug\Project.dll
+C:\Users\PhOnTipa\Documents\GitHub\Project\Project\obj\Debug\Project.pdb

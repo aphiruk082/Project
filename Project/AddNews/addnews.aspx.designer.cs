@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project {
+namespace Project.AddNews {
     
     
-    public partial class _Default {
+    public partial class WebForm1 {
     }
 }
