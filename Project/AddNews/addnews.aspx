@@ -34,7 +34,8 @@
         </UpdateParameters>
     </asp:SqlDataSource>
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="NEWS_ID" 
-        DataSourceID="sqlNews" DefaultMode="Insert">
+        DataSourceID="sqlNews" DefaultMode="Insert" Width="488px" 
+    CellPadding="4" ForeColor="#333333">
         <EditItemTemplate>
             NEWS_ID:
             <asp:Label ID="NEWS_IDLabel1" runat="server" Text='<%# Eval("NEWS_ID") %>' />
@@ -56,6 +57,9 @@
             &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" 
                 CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </EditItemTemplate>
+        <EditRowStyle BackColor="#2461BF" />
+        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
         <InsertItemTemplate>
             NEWS_ID:
             <asp:TextBox ID="NEWS_IDTextBox" runat="server" Text='<%# Bind("NEWS_ID") %>' />
@@ -65,12 +69,12 @@
                 SelectedDate='<%# Bind("NEWS_DATE") %>'></asp:Calendar>
             <br />
             NEWS_TITLE:
-            <asp:TextBox ID="NEWS_TITLETextBox" runat="server" Height="23px" 
-                Text='<%# Bind("NEWS_TITLE") %>' Width="312px" />
+            <asp:TextBox ID="NEWS_TITLETextBox" runat="server" 
+                Text='<%# Bind("NEWS_TITLE") %>' />
             <br />
             NEWS_DETEIL:
-            <asp:TextBox ID="NEWS_DETEILTextBox" runat="server" Height="101px" 
-                Text='<%# Bind("NEWS_DETEIL") %>' TextMode="MultiLine" Width="331px" />
+            <asp:TextBox ID="NEWS_DETEILTextBox" runat="server" 
+                Text='<%# Bind("NEWS_DETEIL") %>' />
             <br />
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" 
                 CommandName="Insert" Text="Insert" />
@@ -99,6 +103,8 @@
             &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" 
                 CommandName="New" Text="New" />
         </ItemTemplate>
+        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+        <RowStyle BackColor="#EFF3FB" />
     </asp:FormView>
     </asp:Content>
 
