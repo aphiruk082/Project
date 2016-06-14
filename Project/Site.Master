@@ -33,6 +33,7 @@
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
                         <asp:MenuItem Text="สมัครสมาชิก" Value="Member"></asp:MenuItem>
+                        <asp:MenuItem Text="เกี่ยวกับสมาคม" Value="concerned"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
                     </Items>
                 </asp:Menu>
